@@ -13,6 +13,7 @@
 - ✅ JWT Authentication + Role-Based Authorization
 - ✅ Pagination, Filtering, Sorting
 - ✅ File Uploading
+- ✅ Logging(Serilog)
 - ✅ Health Checks (`/health`)
 - ✅ Swagger/OpenAPI Docs
 - ✅ Dockerized
