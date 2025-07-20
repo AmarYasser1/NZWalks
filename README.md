@@ -12,6 +12,7 @@
 - ✅ Redis Cache (v2) for performance
 - ✅ JWT Authentication + Role-Based Authorization
 - ✅ Pagination, Filtering, Sorting
+- ✅ File Uploading
 - ✅ Health Checks (`/health`)
 - ✅ Swagger/OpenAPI Docs
 - ✅ Dockerized
@@ -27,7 +28,7 @@
 git clone https://github.com/AmarYasser1/NZWalks.git
 cd NZWalks
 ```
-## Run With Docker
+## 🐳 Run with Docker
 ```bash
 docker-compose up --build
 ```
