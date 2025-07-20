@@ -1,0 +1,1061 @@
+2025-07-15 00:07:47.883 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 00:07:48.177 +03:00 [INF] Unable to bind to http://localhost:5088 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-07-15 00:07:48.230 +03:00 [INF] Unable to bind to http://localhost:5088 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-07-15 00:07:48.376 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://localhost:5088.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-07-15 00:08:52.447 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 00:08:52.680 +03:00 [INF] Unable to bind to http://localhost:5080 on the IPv4 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-07-15 00:08:52.728 +03:00 [INF] Unable to bind to http://localhost:5080 on the IPv6 loopback interface: 'An attempt was made to access a socket in a way forbidden by its access permissions.'.
+2025-07-15 00:08:52.836 +03:00 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address http://localhost:5080.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2025-07-15 00:09:19.139 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 00:09:19.338 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 00:09:19.342 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 00:09:19.392 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 00:09:19.393 +03:00 [INF] Hosting environment: Development
+2025-07-15 00:09:19.396 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 00:10:38.372 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 00:10:38.574 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 00:10:38.579 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 00:10:38.729 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 00:10:38.730 +03:00 [INF] Hosting environment: Development
+2025-07-15 00:10:38.732 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 00:10:47.446 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 00:10:49.312 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:10:49 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:10:49.344 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:10:49 PM'.
+2025-07-15 00:10:49.350 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 00:10:49.372 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 00:10:50.824 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 00:10:50.827 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 00:10:51.382 +03:00 [INF] Executed DbCommand (50ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Description], [w0].[DifficultyId], [w0].[LengthInKm], [w0].[Name], [w0].[RegionId], [w0].[WalkImageUrl], [d].[Id], [d].[Name], [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM (
+    SELECT [w].[Id], [w].[Description], [w].[DifficultyId], [w].[LengthInKm], [w].[Name], [w].[RegionId], [w].[WalkImageUrl]
+    FROM [Walks] AS [w]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [w0]
+INNER JOIN [Difficulties] AS [d] ON [w0].[DifficultyId] = [d].[Id]
+INNER JOIN [Regions] AS [r] ON [w0].[RegionId] = [r].[Id]
+2025-07-15 00:10:51.484 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:10:51.511 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 2132.2603ms
+2025-07-15 00:10:51.517 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 00:10:51.529 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 4453.6449ms
+2025-07-15 00:11:03.122 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:11:03.200 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:11:03 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:11:03.205 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:11:03 PM'.
+2025-07-15 00:11:03.215 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader)
+2025-07-15 00:11:03.224 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-15 00:11:03.227 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 401 0 null 105.2649ms
+2025-07-15 00:11:24.833 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 00:11:25.075 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 00:11:25.078 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 00:11:25.201 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 00:11:25.202 +03:00 [INF] Hosting environment: Development
+2025-07-15 00:11:25.203 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 00:11:28.644 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:11:28.828 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:11:28 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:11:28.858 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:11:28 PM'.
+2025-07-15 00:11:28.864 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:11:28.884 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:11:51.037 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 22146.4684ms
+2025-07-15 00:11:51.179 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:11:51.464 +03:00 [ERR] 34e83002-de61-4e9d-9ef1-119abe19d64d : The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-I8KQ7KM(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=101,Timers=5), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-I8KQ7KM(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=6,QueuedItems=0,CompletedItems=101,Timers=5), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at NZWalks.API.Services.CacheService.GetDataAsync[T](String key, CancellationToken cancellationToken) in D:\Projects (.NET)\NZWalks\NZWalksAPI\Services\CacheService.cs:line 17
+   at NZWalks.API.Controllers.V2.RegionsController.GetAll(CancellationToken cancellationToken) in D:\Projects (.NET)\NZWalks\NZWalksAPI\Controllers\V2\RegionsController.cs:line 31
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NZWalks.API.Middlewares.ExceptionHanderMiddleware.InvokeAsync(HttpContext httpContext) in D:\Projects (.NET)\NZWalks\NZWalksAPI\Middlewares\ExceptionHanderMiddleware.cs:line 20
+2025-07-15 00:11:51.506 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 500 null application/json; charset=utf-8 22864.5802ms
+2025-07-15 00:12:36.426 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 00:12:36.691 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 00:12:36.693 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 00:12:36.731 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 00:12:36.735 +03:00 [INF] Hosting environment: Development
+2025-07-15 00:12:36.736 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 00:12:42.117 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:12:42.292 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:12:42 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:12:42.324 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:12:42 PM'.
+2025-07-15 00:12:42.331 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:12:42.347 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:13:02.236 +03:00 [INF] Cache miss: fetching Regions from DB
+2025-07-15 00:13:19.865 +03:00 [INF] Executed DbCommand (27ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2025-07-15 00:13:47.623 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:13:47.635 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 65283.2979ms
+2025-07-15 00:13:47.639 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:13:47.648 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 65534.85ms
+2025-07-15 00:13:57.074 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:13:57.139 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:13:57 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:13:57.146 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:13:57 PM'.
+2025-07-15 00:13:57.147 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:13:57.148 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:14:01.382 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:14:01.383 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:14:01.386 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4236.3986ms
+2025-07-15 00:14:01.387 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:01.388 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 4314.3548ms
+2025-07-15 00:14:16.337 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:14:16.396 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:16 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:14:16.400 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:16 PM'.
+2025-07-15 00:14:16.405 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:16.406 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:14:16.425 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:14:16.427 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:14:16.429 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 20.3388ms
+2025-07-15 00:14:16.431 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:16.433 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 96.4974ms
+2025-07-15 00:14:18.439 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:14:18.495 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:18 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:14:18.498 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:18 PM'.
+2025-07-15 00:14:18.498 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:18.499 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:14:18.502 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:14:18.503 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:14:18.504 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 3.8201ms
+2025-07-15 00:14:18.505 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:18.507 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 68.6996ms
+2025-07-15 00:14:20.273 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:14:20.327 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:20 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:14:20.331 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:20 PM'.
+2025-07-15 00:14:20.332 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:20.335 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:14:20.338 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:14:20.339 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:14:20.341 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.6256ms
+2025-07-15 00:14:20.342 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:20.344 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 70.5169ms
+2025-07-15 00:14:21.574 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:14:21.615 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:21 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:14:21.618 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:21 PM'.
+2025-07-15 00:14:21.619 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:21.620 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:14:21.626 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:14:21.627 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:14:21.629 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 5.876ms
+2025-07-15 00:14:21.630 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:21.631 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 56.8863ms
+2025-07-15 00:14:37.627 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:14:37.667 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:37 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:14:37.670 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:14:37 PM'.
+2025-07-15 00:14:37.671 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:37.672 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:14:37.678 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:14:37.678 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:14:37.679 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.0731ms
+2025-07-15 00:14:37.680 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:14:37.683 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 55.8828ms
+2025-07-15 00:15:01.905 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v1/Regions - application/json 246
+2025-07-15 00:15:01.912 +03:00 [INF] Authorization failed. These requirements were not met:
+RolesAuthorizationRequirement:User.IsInRole must be true for one of the following roles: (Reader)
+2025-07-15 00:15:01.916 +03:00 [INF] AuthenticationScheme: Bearer was challenged.
+2025-07-15 00:15:01.918 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v1/Regions - 401 0 null 12.2304ms
+2025-07-15 00:15:10.832 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:15:10.869 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:15:10 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:15:10.872 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:15:10 PM'.
+2025-07-15 00:15:10.873 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:15:10.874 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:15:10.876 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:15:10.878 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:15:10.880 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 5.1216ms
+2025-07-15 00:15:10.881 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:15:10.882 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 50.1558ms
+2025-07-15 00:15:24.221 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:15:24.258 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:15:24 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:15:24.264 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:15:24 PM'.
+2025-07-15 00:15:24.265 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:15:24.265 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:15:41.468 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:15:43.287 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:15:43.288 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 19021.036ms
+2025-07-15 00:15:43.289 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:15:43.307 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 19085.7279ms
+2025-07-15 00:16:04.940 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions/906cb139-415a-4bbb-a174-1a1faf9fb1f6 - application/json 186
+2025-07-15 00:16:04.997 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:16:04 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:16:05.003 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:16:04 PM'.
+2025-07-15 00:16:05.004 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:16:05.009 +03:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:16:16.167 +03:00 [INF] Executed DbCommand (94ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-07-15 00:16:18.679 +03:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTOs.RegionDto'.
+2025-07-15 00:16:18.682 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API) in 13671.406ms
+2025-07-15 00:16:18.683 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:16:18.684 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions/906cb139-415a-4bbb-a174-1a1faf9fb1f6 - 200 null application/json; charset=utf-8 13744.4583ms
+2025-07-15 00:16:25.230 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions/906cb139-415a-4bbb-a174-1a1faf9fb1f6 - application/json 186
+2025-07-15 00:16:25.266 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:16:25 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:16:25.270 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:16:25 PM'.
+2025-07-15 00:16:25.271 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:16:25.271 +03:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:16:47.510 +03:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTOs.RegionDto'.
+2025-07-15 00:16:47.512 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API) in 22239.3321ms
+2025-07-15 00:16:47.513 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:16:47.514 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions/906cb139-415a-4bbb-a174-1a1faf9fb1f6 - 200 null application/json; charset=utf-8 22284.4835ms
+2025-07-15 00:16:58.295 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 246
+2025-07-15 00:16:58.301 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:16:58.303 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:01.284 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:01.286 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:01.288 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 2983.4003ms
+2025-07-15 00:17:01.289 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:01.291 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 2996.1028ms
+2025-07-15 00:17:04.933 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 246
+2025-07-15 00:17:04.936 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:04.937 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:04.941 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:04.942 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:04.943 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.0128ms
+2025-07-15 00:17:04.944 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:04.946 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 12.3993ms
+2025-07-15 00:17:09.316 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 246
+2025-07-15 00:17:09.319 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:09.320 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:09.323 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:09.324 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:09.325 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.3936ms
+2025-07-15 00:17:09.326 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:09.327 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 11.1789ms
+2025-07-15 00:17:14.302 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:14.431 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:14.433 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:14.437 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:14.438 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:14.442 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 7.4015ms
+2025-07-15 00:17:14.444 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:14.445 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 143.4322ms
+2025-07-15 00:17:14.486 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/favicon.ico - null null
+2025-07-15 00:17:14.491 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/favicon.ico - 404 0 null 5.1922ms
+2025-07-15 00:17:14.494 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/favicon.ico, Response status code: 404
+2025-07-15 00:17:17.259 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:17.262 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.9117ms
+2025-07-15 00:17:17.265 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:40.029 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:40.040 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:40.041 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:40.045 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:40.045 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:40.046 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 3.319ms
+2025-07-15 00:17:40.047 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:40.048 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 18.9373ms
+2025-07-15 00:17:40.062 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:40.065 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.6201ms
+2025-07-15 00:17:40.067 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:41.309 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:41.314 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:41.316 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:41.321 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:41.323 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:41.325 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 5.7028ms
+2025-07-15 00:17:41.326 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:41.328 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 18.3806ms
+2025-07-15 00:17:41.338 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:41.342 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.7443ms
+2025-07-15 00:17:41.344 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:42.928 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:42.932 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:42.933 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:42.937 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:42.939 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:42.940 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 5.4081ms
+2025-07-15 00:17:42.941 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:42.942 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 14.5768ms
+2025-07-15 00:17:42.950 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:42.952 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.197ms
+2025-07-15 00:17:42.955 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:44.500 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:44.504 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:44.506 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:44.512 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:44.523 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:44.528 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 19.6146ms
+2025-07-15 00:17:44.529 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:44.531 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 31.1353ms
+2025-07-15 00:17:44.542 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:44.545 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.4788ms
+2025-07-15 00:17:44.549 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:47.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:47.119 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:47.120 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:47.124 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:47.125 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:47.127 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 5.0832ms
+2025-07-15 00:17:47.127 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:47.129 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 13.4907ms
+2025-07-15 00:17:47.139 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:47.141 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.2573ms
+2025-07-15 00:17:47.144 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:48.015 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:48.019 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:48.020 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:48.024 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:48.026 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:48.027 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.5529ms
+2025-07-15 00:17:48.028 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:48.029 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 13.3714ms
+2025-07-15 00:17:48.035 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:48.039 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.1167ms
+2025-07-15 00:17:48.041 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:48.755 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:48.759 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:48.761 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:48.763 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:48.764 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:48.765 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 3.1003ms
+2025-07-15 00:17:48.766 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:48.767 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 12.3432ms
+2025-07-15 00:17:48.779 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:48.782 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.5119ms
+2025-07-15 00:17:48.786 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:53.299 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:53.304 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:53.305 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:53.308 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:53.309 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:53.310 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 3.9655ms
+2025-07-15 00:17:53.311 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:53.312 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 13.4486ms
+2025-07-15 00:17:53.320 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:53.322 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 1.9714ms
+2025-07-15 00:17:53.325 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:55.222 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:55.228 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:55.229 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:55.232 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:55.233 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:55.235 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.4943ms
+2025-07-15 00:17:55.236 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:55.238 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 15.4972ms
+2025-07-15 00:17:55.248 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:55.251 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 3.2112ms
+2025-07-15 00:17:55.254 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:56.325 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:56.331 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:56.332 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:56.335 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:56.336 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:56.337 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 3.7088ms
+2025-07-15 00:17:56.338 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:56.339 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 14.4473ms
+2025-07-15 00:17:56.353 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:56.355 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.0602ms
+2025-07-15 00:17:56.359 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:17:57.090 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/api/v2/Regions - null null
+2025-07-15 00:17:57.095 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:57.096 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:17:57.100 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:17:57.101 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:17:57.102 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.5084ms
+2025-07-15 00:17:57.104 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:17:57.104 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 14.2844ms
+2025-07-15 00:17:57.115 +03:00 [INF] Request starting HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - null null
+2025-07-15 00:17:57.118 +03:00 [INF] Request finished HTTP/2 GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json - 404 0 null 2.4618ms
+2025-07-15 00:17:57.120 +03:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET https://localhost:7123/.well-known/appspecific/com.chrome.devtools.json, Response status code: 404
+2025-07-15 00:18:42.435 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7123/api/v2/Regions - application/json 88
+2025-07-15 00:18:42.440 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.Create (NZWalks.API)'
+2025-07-15 00:18:42.447 +03:00 [INF] Route matched with {action = "Create", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Create(NZWalks.API.Models.DTOs.AddRegionRequestDto, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:18:42.712 +03:00 [INF] Executed DbCommand (2ms) [Parameters=[@p0='?' (DbType = Guid), @p1='?' (Size = 4000), @p2='?' (Size = 4000), @p3='?' (Size = 4000)], CommandType='"Text"', CommandTimeout='30']
+SET IMPLICIT_TRANSACTIONS OFF;
+SET NOCOUNT ON;
+INSERT INTO [Regions] ([Id], [Code], [Name], [RegionImageUrl])
+VALUES (@p0, @p1, @p2, @p3);
+2025-07-15 00:18:42.734 +03:00 [INF] New Region Created Successfully!
+2025-07-15 00:18:42.738 +03:00 [INF] Executing CreatedAtActionResult, writing value of type 'NZWalks.API.Models.DTOs.RegionDto'.
+2025-07-15 00:18:42.765 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.Create (NZWalks.API) in 317.3808ms
+2025-07-15 00:18:42.769 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.Create (NZWalks.API)'
+2025-07-15 00:18:42.771 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7123/api/v2/Regions - 201 null application/json; charset=utf-8 335.8152ms
+2025-07-15 00:18:52.379 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions/906cb139-415a-4bbb-a174-1a1faf9fb1f6 - application/json 186
+2025-07-15 00:18:52.451 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:18:52 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:18:52.456 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:18:52 PM'.
+2025-07-15 00:18:52.457 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:18:52.458 +03:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:18:52.462 +03:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTOs.RegionDto'.
+2025-07-15 00:18:52.464 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API) in 3.9077ms
+2025-07-15 00:18:52.465 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:18:52.466 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions/906cb139-415a-4bbb-a174-1a1faf9fb1f6 - 200 null application/json; charset=utf-8 87.3652ms
+2025-07-15 00:19:05.464 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:19:05.519 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:19:05 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:19:05.525 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:19:05 PM'.
+2025-07-15 00:19:05.526 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:19:05.528 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:19:05.532 +03:00 [INF] Cache miss: fetching Regions from DB
+2025-07-15 00:19:05.535 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+2025-07-15 00:19:05.537 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:19:05.538 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 8.233ms
+2025-07-15 00:19:05.539 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:19:05.540 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 75.7691ms
+2025-07-15 00:19:16.675 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:19:16.716 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:19:16 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:19:16.718 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:19:16 PM'.
+2025-07-15 00:19:16.719 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:19:16.720 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:19:16.724 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:19:16.725 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:19:16.726 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.4008ms
+2025-07-15 00:19:16.727 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:19:16.728 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 52.9194ms
+2025-07-15 00:19:18.245 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 186
+2025-07-15 00:19:18.284 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:19:18 PM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 00:19:18.289 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/14/2025 9:19:18 PM'.
+2025-07-15 00:19:18.291 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:19:18.291 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:19:18.294 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:19:18.295 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:19:18.296 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 3.2465ms
+2025-07-15 00:19:18.297 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:19:18.297 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 52.6657ms
+2025-07-15 00:21:11.543 +03:00 [INF] Request starting HTTP/1.1 POST https://localhost:7123/api/v2/Regions/bbff56a4-f5ce-4d58-bc40-a6fd8ed8c729 - application/json 72
+2025-07-15 00:21:11.547 +03:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-07-15 00:21:11.548 +03:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-07-15 00:21:11.549 +03:00 [INF] Request finished HTTP/1.1 POST https://localhost:7123/api/v2/Regions/bbff56a4-f5ce-4d58-bc40-a6fd8ed8c729 - 405 0 null 5.9867ms
+2025-07-15 00:21:22.496 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions/bbff56a4-f5ce-4d58-bc40-a6fd8ed8c729 - application/json 72
+2025-07-15 00:21:22.498 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:21:22.499 +03:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:21:22.505 +03:00 [INF] Executed DbCommand (1ms) [Parameters=[@__id_0='?' (DbType = Guid)], CommandType='"Text"', CommandTimeout='30']
+SELECT TOP(1) [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM [Regions] AS [r]
+WHERE [r].[Id] = @__id_0
+2025-07-15 00:21:22.508 +03:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTOs.RegionDto'.
+2025-07-15 00:21:22.509 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API) in 9.2433ms
+2025-07-15 00:21:22.510 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:21:22.511 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions/bbff56a4-f5ce-4d58-bc40-a6fd8ed8c729 - 200 null application/json; charset=utf-8 15.0823ms
+2025-07-15 00:21:26.827 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions/bbff56a4-f5ce-4d58-bc40-a6fd8ed8c729 - application/json 72
+2025-07-15 00:21:26.830 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:21:26.831 +03:00 [INF] Route matched with {action = "GetById", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetById(System.Guid, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:21:26.833 +03:00 [INF] Executing OkObjectResult, writing value of type 'NZWalks.API.Models.DTOs.RegionDto'.
+2025-07-15 00:21:26.834 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API) in 2.342ms
+2025-07-15 00:21:26.835 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetById (NZWalks.API)'
+2025-07-15 00:21:26.836 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions/bbff56a4-f5ce-4d58-bc40-a6fd8ed8c729 - 200 null application/json; charset=utf-8 9.2476ms
+2025-07-15 00:22:53.233 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 72
+2025-07-15 00:22:53.240 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:22:53.241 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:22:53.246 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:22:53.248 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:22:53.249 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.9462ms
+2025-07-15 00:22:53.250 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:22:53.251 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 87.5345ms
+2025-07-15 00:22:55.584 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Regions - application/json 72
+2025-07-15 00:22:55.588 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:22:55.590 +03:00 [INF] Route matched with {action = "GetAll", controller = "Regions"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.RegionsController (NZWalks.API).
+2025-07-15 00:22:55.593 +03:00 [INF] Cache hit: Regions
+2025-07-15 00:22:55.593 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.RegionDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 00:22:55.596 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API) in 4.6681ms
+2025-07-15 00:22:55.597 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.RegionsController.GetAll (NZWalks.API)'
+2025-07-15 00:22:55.598 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Regions - 200 null application/json; charset=utf-8 13.8948ms
+2025-07-15 04:55:10.067 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 04:55:10.292 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 04:55:10.295 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 04:55:10.341 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 04:55:10.343 +03:00 [INF] Hosting environment: Development
+2025-07-15 04:55:10.344 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 04:55:22.190 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/health - application/json 72
+2025-07-15 04:55:22.271 +03:00 [INF] Executing endpoint 'Health checks'
+2025-07-15 04:55:23.055 +03:00 [INF] Executed endpoint 'Health checks'
+2025-07-15 04:55:23.064 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/health - 200 null application/json 876.9475ms
+2025-07-15 04:55:52.620 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/health - application/json 72
+2025-07-15 04:55:52.625 +03:00 [INF] Executing endpoint 'Health checks'
+2025-07-15 04:55:58.783 +03:00 [ERR] Health check redis with status "Unhealthy" completed after 6138.666ms with message 'null'
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout, command=PING, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 3, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 1, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-I8KQ7KM(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=4,QueuedItems=0,CompletedItems=169,Timers=7), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code. ConnectTimeout
+   --- End of inner exception stack trace ---
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.Redis/RedisHealthCheck.cs:line 75
+2025-07-15 04:55:58.833 +03:00 [INF] Executed endpoint 'Health checks'
+2025-07-15 04:55:58.836 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/health - 503 null application/json 6215.6489ms
+2025-07-15 04:56:40.258 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/health - application/json 72
+2025-07-15 04:56:40.263 +03:00 [INF] Executing endpoint 'Health checks'
+2025-07-15 04:56:40.356 +03:00 [INF] Executed endpoint 'Health checks'
+2025-07-15 04:56:40.358 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/health - 200 null application/json 100.1117ms
+2025-07-15 04:57:03.395 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 04:57:03.495 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:03 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 04:57:03.500 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:03 AM'.
+2025-07-15 04:57:03.501 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:03.518 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 04:57:10.784 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 04:57:10.788 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 04:57:10.978 +03:00 [INF] Executed DbCommand (31ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Description], [w0].[DifficultyId], [w0].[LengthInKm], [w0].[Name], [w0].[RegionId], [w0].[WalkImageUrl], [d].[Id], [d].[Name], [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM (
+    SELECT [w].[Id], [w].[Description], [w].[DifficultyId], [w].[LengthInKm], [w].[Name], [w].[RegionId], [w].[WalkImageUrl]
+    FROM [Walks] AS [w]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [w0]
+INNER JOIN [Difficulties] AS [d] ON [w0].[DifficultyId] = [d].[Id]
+INNER JOIN [Regions] AS [r] ON [w0].[RegionId] = [r].[Id]
+2025-07-15 04:57:14.061 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 04:57:14.074 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 10549.7035ms
+2025-07-15 04:57:14.075 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:14.083 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 10688.7609ms
+2025-07-15 04:57:19.900 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 04:57:19.940 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:19 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 04:57:19.942 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:19 AM'.
+2025-07-15 04:57:19.943 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:19.944 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 04:57:32.314 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 04:57:32.316 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 12370.4536ms
+2025-07-15 04:57:32.318 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:32.319 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 12418.6443ms
+2025-07-15 04:57:40.176 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 04:57:40.214 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:40 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 04:57:40.217 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:40 AM'.
+2025-07-15 04:57:40.218 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:40.219 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 04:57:40.231 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 04:57:40.233 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 12.7351ms
+2025-07-15 04:57:40.234 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:40.235 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 58.5074ms
+2025-07-15 04:57:41.328 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 04:57:41.365 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:41 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 04:57:41.370 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:41 AM'.
+2025-07-15 04:57:41.370 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:41.371 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 04:57:41.375 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 04:57:41.376 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 3.1817ms
+2025-07-15 04:57:41.377 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:41.378 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 50.2136ms
+2025-07-15 04:57:42.291 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 04:57:42.332 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:42 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 04:57:42.338 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:42 AM'.
+2025-07-15 04:57:42.339 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:42.339 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 04:57:42.343 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 04:57:42.344 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 2.941ms
+2025-07-15 04:57:42.345 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:42.346 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 54.1667ms
+2025-07-15 04:57:43.729 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 04:57:43.769 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:43 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 04:57:43.772 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 1:57:43 AM'.
+2025-07-15 04:57:43.775 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:43.775 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 04:57:43.778 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 04:57:43.780 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 3.5097ms
+2025-07-15 04:57:43.781 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 04:57:43.782 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 53.3092ms
+2025-07-15 05:43:58.736 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 05:43:58.928 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 05:43:58.935 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 05:43:59.131 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 05:43:59.134 +03:00 [INF] Hosting environment: Development
+2025-07-15 05:43:59.136 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 05:44:04.638 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:44:04.888 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:04 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:44:04.925 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:04 AM'.
+2025-07-15 05:44:04.932 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:04.960 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:44:06.334 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 05:44:06.339 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 05:44:06.960 +03:00 [INF] Executed DbCommand (67ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Description], [w0].[DifficultyId], [w0].[LengthInKm], [w0].[Name], [w0].[RegionId], [w0].[WalkImageUrl], [d].[Id], [d].[Name], [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM (
+    SELECT [w].[Id], [w].[Description], [w].[DifficultyId], [w].[LengthInKm], [w].[Name], [w].[RegionId], [w].[WalkImageUrl]
+    FROM [Walks] AS [w]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [w0]
+INNER JOIN [Difficulties] AS [d] ON [w0].[DifficultyId] = [d].[Id]
+INNER JOIN [Regions] AS [r] ON [w0].[RegionId] = [r].[Id]
+2025-07-15 05:44:07.174 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:44:07.189 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 2220.1693ms
+2025-07-15 05:44:07.193 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:07.206 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 2573.7551ms
+2025-07-15 05:44:09.947 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:44:10.012 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:09 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:44:10.019 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:09 AM'.
+2025-07-15 05:44:10.021 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:10.022 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:44:10.106 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:44:10.111 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 87.0912ms
+2025-07-15 05:44:10.114 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:10.117 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 170.0182ms
+2025-07-15 05:44:11.187 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:44:11.244 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:11 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:44:11.249 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:11 AM'.
+2025-07-15 05:44:11.249 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:11.250 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:44:11.264 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:44:11.265 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 14.3344ms
+2025-07-15 05:44:11.266 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:11.267 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 80.5666ms
+2025-07-15 05:44:12.177 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:44:12.229 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:12 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:44:12.233 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:44:12 AM'.
+2025-07-15 05:44:12.234 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:12.234 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:44:12.238 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:44:12.239 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 3.8362ms
+2025-07-15 05:44:12.240 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:44:12.241 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 64.4652ms
+2025-07-15 05:46:07.842 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 05:46:08.057 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 05:46:08.063 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 05:46:08.098 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 05:46:08.101 +03:00 [INF] Hosting environment: Development
+2025-07-15 05:46:08.103 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 05:46:13.725 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:46:13.972 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:46:13 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:46:13.997 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:46:13 AM'.
+2025-07-15 05:46:14.000 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:46:14.018 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:46:14.834 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:46:14.849 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 825.8099ms
+2025-07-15 05:46:14.853 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:46:14.861 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 1139.5726ms
+2025-07-15 05:46:16.315 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:46:16.366 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:46:16 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:46:16.368 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:46:16 AM'.
+2025-07-15 05:46:16.369 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:46:16.371 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:46:16.412 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:46:16.414 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 42.2495ms
+2025-07-15 05:46:16.416 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:46:16.417 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 101.8798ms
+2025-07-15 05:46:17.330 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 05:46:17.370 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:46:17 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 05:46:17.372 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 2:46:17 AM'.
+2025-07-15 05:46:17.373 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:46:17.373 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 05:46:17.387 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 05:46:17.390 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 15.1044ms
+2025-07-15 05:46:17.391 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 05:46:17.392 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 61.5763ms
+2025-07-15 06:43:41.592 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 06:43:41.793 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 06:43:41.797 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 06:43:41.843 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 06:43:41.845 +03:00 [INF] Hosting environment: Development
+2025-07-15 06:43:41.846 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 06:43:59.060 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:43:59.265 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:43:59 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:43:59.279 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:43:59 AM'.
+2025-07-15 06:43:59.284 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:43:59.303 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:44:14.357 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 15045.2509ms
+2025-07-15 06:44:14.488 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:44:14.762 +03:00 [ERR] 70df9ac7-da0c-4298-9e20-c089a9e14862 : The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-I8KQ7KM(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=5,QueuedItems=0,CompletedItems=113,Timers=7), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+StackExchange.Redis.RedisConnectionException: The message timed out in the backlog attempting to send because no connection became available (5000ms) - Last Connection Exception: It was not possible to connect to the redis server(s). ConnectTimeout, command=HMGET, timeout: 5000, inst: 0, qu: 0, qs: 0, aw: False, bw: CheckingForTimeout, rs: NotStarted, ws: Initializing, in: 0, last-in: 0, cur-in: 0, sync-ops: 0, async-ops: 1, serverEndpoint: localhost:6379, conn-sec: n/a, aoc: 0, mc: 1/1/0, mgr: 10 of 10 available, clientName: DESKTOP-I8KQ7KM(SE.Redis-v2.7.27.49176), IOCP: (Busy=0,Free=1000,Min=1,Max=1000), WORKER: (Busy=0,Free=32767,Min=8,Max=32767), POOL: (Threads=5,QueuedItems=0,CompletedItems=113,Timers=7), v: 2.7.27.49176 (Please take a look at this article for some common client-side issues that can cause timeouts: https://stackexchange.github.io/StackExchange.Redis/Timeouts)
+ ---> StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). ConnectTimeout
+   --- End of inner exception stack trace ---
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAndRefreshAsync(String key, Boolean getData, CancellationToken token)
+   at Microsoft.Extensions.Caching.StackExchangeRedis.RedisCache.GetAsync(String key, CancellationToken token)
+   at Microsoft.Extensions.Caching.Distributed.DistributedCacheExtensions.GetStringAsync(IDistributedCache cache, String key, CancellationToken token)
+   at NZWalks.API.Services.CacheService.GetDataAsync[T](String key, CancellationToken cancellationToken) in D:\Projects (.NET)\NZWalks\NZWalksAPI\Services\CacheService.cs:line 17
+   at NZWalks.API.Controllers.V2.WalksController.GetAll(WalkQueryParameters walkQueryParameters, CancellationToken cancellationToken) in D:\Projects (.NET)\NZWalks\NZWalksAPI\Controllers\V2\WalksController.cs:line 29
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at NZWalks.API.Middlewares.ExceptionHanderMiddleware.InvokeAsync(HttpContext httpContext) in D:\Projects (.NET)\NZWalks\NZWalksAPI\Middlewares\ExceptionHanderMiddleware.cs:line 20
+2025-07-15 06:44:14.800 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 500 null application/json; charset=utf-8 15743.877ms
+2025-07-15 06:44:39.833 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 06:44:40.067 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 06:44:40.074 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 06:44:40.239 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 06:44:40.242 +03:00 [INF] Hosting environment: Development
+2025-07-15 06:44:40.245 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 06:45:40.217 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:45:40.622 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:45:40 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:45:40.636 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:45:40 AM'.
+2025-07-15 06:45:40.648 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:45:40.685 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:45:42.202 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 06:45:42.208 +03:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2025-07-15 06:45:42.702 +03:00 [INF] Executed DbCommand (60ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Description], [w0].[DifficultyId], [w0].[LengthInKm], [w0].[Name], [w0].[RegionId], [w0].[WalkImageUrl], [d].[Id], [d].[Name], [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM (
+    SELECT [w].[Id], [w].[Description], [w].[DifficultyId], [w].[LengthInKm], [w].[Name], [w].[RegionId], [w].[WalkImageUrl]
+    FROM [Walks] AS [w]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [w0]
+INNER JOIN [Difficulties] AS [d] ON [w0].[DifficultyId] = [d].[Id]
+INNER JOIN [Regions] AS [r] ON [w0].[RegionId] = [r].[Id]
+2025-07-15 06:45:42.898 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:45:42.919 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 2223.0556ms
+2025-07-15 06:45:42.926 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:45:42.940 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 2727.2931ms
+2025-07-15 06:46:20.569 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:46:20.637 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:20 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:20.643 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:20 AM'.
+2025-07-15 06:46:20.643 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:20.645 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:46:20.712 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:46:20.718 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 70.6729ms
+2025-07-15 06:46:20.719 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:20.720 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 151.6182ms
+2025-07-15 06:46:27.987 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:46:28.051 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:27 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:28.054 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:27 AM'.
+2025-07-15 06:46:28.055 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:28.056 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:46:28.075 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:46:28.077 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 19.6041ms
+2025-07-15 06:46:28.079 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:28.080 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 93.1886ms
+2025-07-15 06:46:29.553 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:46:29.609 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:29 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:29.614 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:29 AM'.
+2025-07-15 06:46:29.616 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:29.618 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:46:29.624 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:46:29.625 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 4.5003ms
+2025-07-15 06:46:29.627 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:29.628 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 74.734ms
+2025-07-15 06:46:31.031 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:46:31.126 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:31 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:31.129 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:31 AM'.
+2025-07-15 06:46:31.132 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:31.136 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:46:31.142 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:46:31.144 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 4.0177ms
+2025-07-15 06:46:31.145 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:31.146 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 114.8411ms
+2025-07-15 06:46:32.943 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v2/Walks - application/json 186
+2025-07-15 06:46:32.990 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:32 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:32.996 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:32 AM'.
+2025-07-15 06:46:32.997 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:32.998 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters, System.Threading.CancellationToken) on controller NZWalks.API.Controllers.V2.WalksController (NZWalks.API).
+2025-07-15 06:46:33.004 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:46:33.005 +03:00 [INF] Executed action NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API) in 4.1478ms
+2025-07-15 06:46:33.006 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:33.007 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v2/Walks - 200 null application/json; charset=utf-8 63.9085ms
+2025-07-15 06:46:39.386 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v1/Walks - application/json 186
+2025-07-15 06:46:39.430 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:39 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:39.432 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:39 AM'.
+2025-07-15 06:46:39.433 +03:00 [INF] Executing endpoint 'NZWalks.API.Controllers.V1.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:39.438 +03:00 [INF] Route matched with {action = "GetAll", controller = "Walks"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetAll(NZWalks.API.Models.Domain.WalkQueryParameters) on controller NZWalks.API.Controllers.V1.WalksController (NZWalks.API).
+2025-07-15 06:46:39.455 +03:00 [INF] Executed DbCommand (8ms) [Parameters=[@__p_0='?' (DbType = Int32), @__p_1='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+SELECT [w0].[Id], [w0].[Description], [w0].[DifficultyId], [w0].[LengthInKm], [w0].[Name], [w0].[RegionId], [w0].[WalkImageUrl], [d].[Id], [d].[Name], [r].[Id], [r].[Code], [r].[Name], [r].[RegionImageUrl]
+FROM (
+    SELECT [w].[Id], [w].[Description], [w].[DifficultyId], [w].[LengthInKm], [w].[Name], [w].[RegionId], [w].[WalkImageUrl]
+    FROM [Walks] AS [w]
+    ORDER BY (SELECT 1)
+    OFFSET @__p_0 ROWS FETCH NEXT @__p_1 ROWS ONLY
+) AS [w0]
+INNER JOIN [Difficulties] AS [d] ON [w0].[DifficultyId] = [d].[Id]
+INNER JOIN [Regions] AS [r] ON [w0].[RegionId] = [r].[Id]
+2025-07-15 06:46:39.459 +03:00 [INF] Executing OkObjectResult, writing value of type 'System.Collections.Generic.List`1[[NZWalks.API.Models.DTOs.WalkDto, NZWalks.API, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-07-15 06:46:39.461 +03:00 [INF] Executed action NZWalks.API.Controllers.V1.WalksController.GetAll (NZWalks.API) in 21.464ms
+2025-07-15 06:46:39.462 +03:00 [INF] Executed endpoint 'NZWalks.API.Controllers.V1.WalksController.GetAll (NZWalks.API)'
+2025-07-15 06:46:39.463 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v1/Walks - 200 null application/json; charset=utf-8 76.6785ms
+2025-07-15 06:46:44.343 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/api/v3/Walks - application/json 186
+2025-07-15 06:46:44.355 +03:00 [INF] Multiple candidate actions were found, but none matched the requested service API version '3'. Candidate actions: NZWalks.API.Controllers.V1.WalksController.GetAll (NZWalks.API)
+NZWalks.API.Controllers.V2.WalksController.GetAll (NZWalks.API)
+2025-07-15 06:46:44.401 +03:00 [INF] Failed to validate the token.
+Microsoft.IdentityModel.Tokens.SecurityTokenExpiredException: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:44 AM'.
+   at Microsoft.IdentityModel.Tokens.ValidatorUtilities.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.Tokens.Validators.ValidateLifetime(Nullable`1 notBefore, Nullable`1 expires, SecurityToken securityToken, TokenValidationParameters validationParameters)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateTokenPayloadAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+   at Microsoft.IdentityModel.JsonWebTokens.JsonWebTokenHandler.ValidateJWSAsync(JsonWebToken jsonWebToken, TokenValidationParameters validationParameters, BaseConfiguration configuration)
+2025-07-15 06:46:44.406 +03:00 [INF] Bearer was not authenticated. Failure message: IDX10223: Lifetime validation failed. The token is expired. ValidTo (UTC): '7/9/2025 4:28:15 PM', Current time (UTC): '7/15/2025 3:46:44 AM'.
+2025-07-15 06:46:44.407 +03:00 [INF] Executing endpoint 'Microsoft.AspNetCore.Http.Endpoint'
+2025-07-15 06:46:44.410 +03:00 [INF] Executing ObjectResult, writing value of type '<>f__AnonymousType0`1[[<>f__AnonymousType1`3[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e],[<>f__AnonymousType2`1[[System.String, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]], Microsoft.AspNetCore.Mvc.Versioning, Version=5.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]], Microsoft.AspNetCore.Mvc.Versioning, Version=5.1.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60]]'.
+2025-07-15 06:46:44.414 +03:00 [INF] Executed endpoint 'Microsoft.AspNetCore.Http.Endpoint'
+2025-07-15 06:46:44.415 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/api/v3/Walks - 400 null application/json; charset=utf-8 71.5259ms
+2025-07-15 06:59:54.859 +03:00 [INF] User profile is available. Using 'C:\Users\User\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2025-07-15 06:59:55.035 +03:00 [INF] Now listening on: https://localhost:7123
+2025-07-15 06:59:55.040 +03:00 [INF] Now listening on: http://localhost:5000
+2025-07-15 06:59:55.082 +03:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-07-15 06:59:55.086 +03:00 [INF] Hosting environment: Development
+2025-07-15 06:59:55.087 +03:00 [INF] Content root path: D:\Projects (.NET)\NZWalks\NZWalksAPI
+2025-07-15 07:00:25.195 +03:00 [INF] Request starting HTTP/1.1 GET https://localhost:7123/health - application/json 72
+2025-07-15 07:00:25.299 +03:00 [INF] Executing endpoint 'Health checks'
+2025-07-15 07:00:34.230 +03:00 [ERR] Health check redis with status "Unhealthy" completed after 8919.5811ms with message 'null'
+StackExchange.Redis.RedisConnectionException: It was not possible to connect to the redis server(s). Error connecting right now. To allow this multiplexer to continue retrying until it's able to connect, use abortConnect=false in your connection string or AbortOnConnectFail=false; in your code.
+   at StackExchange.Redis.ConnectionMultiplexer.ConnectImplAsync(ConfigurationOptions configuration, TextWriter writer, Nullable`1 serverType) in /_/src/StackExchange.Redis/ConnectionMultiplexer.cs:line 620
+   at HealthChecks.Redis.RedisHealthCheck.TimeoutAsync(Task`1 task, CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.Redis/RedisHealthCheck.cs:line 124
+   at HealthChecks.Redis.RedisHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /home/runner/work/AspNetCore.Diagnostics.HealthChecks/AspNetCore.Diagnostics.HealthChecks/src/HealthChecks.Redis/RedisHealthCheck.cs:line 54
+2025-07-15 07:00:34.387 +03:00 [INF] Executed endpoint 'Health checks'
+2025-07-15 07:00:34.394 +03:00 [INF] Request finished HTTP/1.1 GET https://localhost:7123/health - 503 null application/json 9204.449ms

@@ -1,0 +1,33 @@
+﻿@using NZWalks.UI.Models.VMs
+@model RegionVM
+
+<h1 class="text-center text-primary">Edit Region</h1>
+
+@if(Model is not null)
+{
+	<form method="post" class="p-4 shadow rounded bg-light">
+		<div class="mb-3">
+			<label class="form-label">Region ID</label>
+			<input type="text" class="form-control" asp-for="Id" readonly>
+		</div>
+
+		<div class="mb-3">
+			<label class="form-label">Region Code</label>
+			<input type="text" class="form-control" asp-for="Code">
+		</div>
+
+		<div class="mb-3">
+			<label class="form-label">Region Name</label>
+			<input type="text" class="form-control" asp-for="Name">
+		</div>
+
+		<div class="mb-3">
+			<label class="form-label">Image URL</label>
+			<input type="text" class="form-control" asp-for="RegionImageUrl">
+		</div>
+
+		<div class="d-flex justify-content-end gap-2">
+			<button type="submit" class="btn btn-success px-4">Submit</button>
+		</div>
+	</form>
+}

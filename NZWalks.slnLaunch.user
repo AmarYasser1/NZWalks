@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "NZWalksAPI\\NZWalks.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "NZWalks.UI\\NZWalks.UI.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

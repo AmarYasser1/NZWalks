@@ -1,0 +1,33 @@
+﻿@using NZWalks.UI.Models.VMs
+@model IEnumerable<RegionVM>
+
+<h1 class="mt-2 align-items-center">Regions</h1>
+
+<div class="d-flex justify-content-end">
+    <a class="btn btn-primary" asp-controller="Regions" asp-action="Add">Add Region</a>
+</div>
+
+<table class="table table-striped table-hover table-bordered shadow rounded mt-4">
+    <thead class="table-dark text-center">
+        <tr>
+            <th>ID</th>
+            <th>Code</th>
+            <th>Name</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var region in Model)
+        {
+            <tr class="text-center align-middle">
+                <td>@region.Id</td>
+                <td>@region.Code</td>
+                <td>@region.Name</td>
+                <td class="d-flex justify-content-between">
+                    <a class="btn btn-secondary" asp-route-id="@region.Id" asp-controller="Regions" asp-action="Edit">Edit</a>
+                    <a class="btn btn-danger" asp-route-id="@region.Id" asp-controller="Regions" asp-action="Delete">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

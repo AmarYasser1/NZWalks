@@ -1,0 +1,102 @@
+name: dockercompose10577342304238753269
+services:
+  nzwalks.api:
+    build:
+      context: D:\Projects (.NET)\NZWalks
+      dockerfile: NZWalksAPI/Dockerfile
+    container_name: nzwalks
+    depends_on:
+      redis-cache:
+        condition: service_started
+        required: true
+      sql_server:
+        condition: service_started
+        required: true
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_HTTP_PORTS: "8080"
+      ASPNETCORE_HTTPS_PORTS: "8081"
+      ASPNETCORE_URLS: http://+:8080
+      ConnectionStrings__NZWalksAuthConnectionString: Server=sql_server, 1433;Database=NZWalksAuthDb;User Id=sa;Password=01152151908.Amar;TrustServerCertificate=True
+      ConnectionStrings__NZWalksConnectionString: Server=sql_server, 1433;Database=NZWalksDb;User Id=sa;Password=01152151908.Amar;TrustServerCertificate=True
+    image: nzwalksapi
+    networks:
+      nzwalks: null
+    ports:
+      - mode: ingress
+        target: 8080
+        published: "8080"
+        protocol: tcp
+      - mode: ingress
+        target: 8080
+        protocol: tcp
+      - mode: ingress
+        target: 8081
+        protocol: tcp
+    volumes:
+      - type: bind
+        source: D:\Projects (.NET)\NZWalks\Images
+        target: /app/Images
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+        target: /home/app/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/Microsoft/UserSecrets
+        target: /root/.microsoft/usersecrets
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+        target: /home/app/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+      - type: bind
+        source: C:\Users\User\AppData\Roaming/ASP.NET/Https
+        target: /root/.aspnet/https
+        read_only: true
+        bind:
+          create_host_path: true
+  redis-cache:
+    container_name: redis
+    image: redis:latest
+    networks:
+      nzwalks: null
+    ports:
+      - mode: ingress
+        target: 6379
+        published: "6379"
+        protocol: tcp
+    restart: always
+  sql_server:
+    container_name: sqlserver-nzwalks
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_PID: Developer
+      SA_PASSWORD: 01152151908.Amar
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    networks:
+      nzwalks: null
+    ports:
+      - mode: ingress
+        target: 1433
+        published: "1433"
+        protocol: tcp
+    volumes:
+      - type: volume
+        source: sql_data_nzwalks
+        target: /var/opt/mssql
+        volume: {}
+networks:
+  nzwalks:
+    name: dockercompose10577342304238753269_nzwalks
+    driver: bridge
+volumes:
+  sql_data_nzwalks:
+    name: dockercompose10577342304238753269_sql_data_nzwalks

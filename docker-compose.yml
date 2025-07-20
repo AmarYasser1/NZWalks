@@ -1,0 +1,51 @@
+services:
+  nzwalks.api:
+    image: ${DOCKER_REGISTRY-}nzwalksapi
+    container_name: nzwalks
+    build:
+      context: .
+      dockerfile: NZWalksAPI/Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ASPNETCORE_URLS=http://+:8080
+      - ConnectionStrings__NZWalksConnectionString=Server=sql_server, 1433;Database=NZWalksDb;User Id=sa;Password=01152151908.Amar;TrustServerCertificate=True;
+      - ConnectionStrings__NZWalksAuthConnectionString=Server=sql_server, 1433;Database=NZWalksAuthDb;User Id=sa;Password=01152151908.Amar;TrustServerCertificate=True;
+    networks:
+      - nzwalks
+    depends_on:
+       - redis-cache
+       - sql_server
+    volumes:
+      - ./Images:/app/Images
+
+  sql_server:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-nzwalks
+    environment:
+      - ACCEPT_EULA=Y
+      - SA_PASSWORD=01152151908.Amar
+      - MSSQL_PID=Developer
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql_data:/var/opt/mssql
+    networks:
+      - nzwalks
+
+  redis-cache:
+    image: redis:latest
+    container_name: redis
+    ports:
+      - "6379:6379" 
+    restart: always
+    networks:
+      - nzwalks
+
+networks:
+   nzwalks:
+     driver: bridge
+
+volumes:
+  sql_data:
